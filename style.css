@@ -15,6 +15,7 @@
     --white-color: #fff;
     --overlay-color: rgba(0, 0, 0, 0.6);
     --secondary-color: #404040;
+    --accent-color: #0563bb; /* <-- Add this line */
 }
 
 .menu-bar
@@ -134,7 +135,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header-content {
-    padding-top: 80px;
+     scroll-margin-top: 90px; 
 }
 
 .header{
@@ -197,7 +198,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .main-content{
-    padding-top: 80px;
+     scroll-margin-top: 90px; 
 }
 
 
@@ -211,6 +212,7 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     gap: 20px;
 }
+
 
 .section-about, .section-skills {
     display: flex;
@@ -246,7 +248,9 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     color: #0563bb;
     margin-bottom: 20px;
+    position: relative;
 }
+
 
 strong{
     color: #0563bb;
@@ -287,86 +291,115 @@ strong{
     transform: scale(2);
 }
 
-.qualification-section{
-    padding-top: 80px;
+#resume {
+  scroll-margin-top: 90px; 
 }
 
-.qualification-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.resume.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.qualification-section .qualification-content{
+.resume .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #0563bb;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.resume-data{
+    margin-left: 20%;
+}
+
+.resume .resume-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  padding: 0 0 18px 40px;
+  margin-top: -2px;
+  border-left: 4px solid #0563bb;
+}
+
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item::before:last-child {
+  padding-bottom: 0;
+    border: 2px solid var(--accent-color);
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -13px;
+  top: 0;
+  background-color: #0a4c8a;
+  border: 3px solid var(--accent-color);
+}
+
+#project{
+     scroll-margin-top: 90px; 
+}
+/*.project-section{
     display: flex;
+    flex-direction: row;
     width: 100%;
-    padding: 40px;
-    align-items: center;
+    height: 100vh;
+    padding: 20px;
     justify-content: center;
+    gap: 20px;
+}
+    */
+.project-section .project-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.qualification-section .qualification-content .qualification-title{
+.project-heading .project-subtitle{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+}
+
+.project-heading .project-title{
     font-size: 2.5rem;
     font-weight: bold;
     color: #0563bb;
     margin-bottom: 20px;
-}
-
-.qualification-item{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 0  0 20px 40px;
-}
-
-.qualification-item h3{
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding-bottom: 5px ;
-    color: #0563bb;
-}
-
-.qualification-item p{
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-*/
-/* Timeline container */
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Timeline node */
-.timeline-node {
-    width: 20px;
-    height: 20px;
-    background-color: #02427e;
-    border-radius: 50%;
     position: relative;
-    margin-bottom: 40px;
 }
 
-.timeline-node::after{
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: calc(100% + 40px);
-    background-color: #0563bb;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: -1;
-}
-
-.timeline-node:last-child::after{
-    display: none;
-}
-
-.timeline-node:last-child{
-    background-color: #0563bb;
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
+    justify-content: center;
+    margin: 18rem;
 }

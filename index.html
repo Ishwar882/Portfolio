@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishwar Portfolio</title>
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        --->
+
+    <!-- SEO Meta Tags -->
+     
+    <meta name="description" content="Ishwar is a passionate Frontend Web Developer specializing in creating visually appealing and responsive websites. Explore my portfolio to see my projects and skills in HTML, CSS, JavaScript, and more.">
+    <meta name="keywords" content="Ishwar, Frontend Developer, Web Developer, HTML, CSS, JavaScript, React, Portfolio, Delhi">
+    <meta name="author" content="Ishwar">
+
+    <!--LINK SECTION-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
 </head>
+
 <body class="container">
-    <nav>
-        <div class="navbar">
+    <div class="navbar">
+        <div class="navbar-left">
             <a href="#" class="logo-link">
-                <img src="images/logo/LOGO.jpg" alt="Ishwar Logo" class="logo">
+                <img src="images/logo/Logo.png" alt="Ishwar Logo" class="logo">
             </a>
-            <ul class="nav-links">
-                <li class="item">
-                    <a href="#home" class="link">HOME</a>
-                </li>
-
-                <li class="item">
-                    <a href="#about" class="link">ABOUT</a>
-                </li>
-
-                <li class="item">
-                    <a href="#resume" class="link">QUALIFICATIONS</a>
-                </li>
-
-                <li class="item">
-                    <a href="#project" class="link">PROJECTS</a>
-                </li>
-
-                <li class="item">
-                    <a href="#contact" class="link">CONTACT</a>
-                </li>
-            </ul>
-                 <div class="menu-bar" onclick = "toggleMenu(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                </div>
         </div>
-    </nav>
-    
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="menu-container">
+            <nav id="menu">
+                <ul class="nav-links">
+                    <li class="item">
+                        <a href="#home" class="link">HOME</a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#about" class="link">ABOUT</a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#resume" class="link">QUALIFICATIONS</a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#project" class="link">PROJECTS</a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#contact" class="link">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
     <!----PAGE HEADER-->
-   
+
     <header id="home" class="header">
-         <div class="header-content">
-        <div class="overlay"></div>
-        <div class="header-content container">
-        
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I AM ISHWAR</span>
-            </h1>
-            <p class="text">FRONTEND WEB DEVELOPER</p>
-        </div>
+        <div class="header-content">
+            <div class="overlay"></div>
+            <div class="header-content container">
+
+                <h1 class="header-title">
+                    <span class="up">HI!</span>
+                    <span class="down">I AM ISHWAR</span>
+                </h1>
+                <p class="text">FRONTEND WEB DEVELOPER</p>
+            </div>
         </div>
     </header>
 
-    <div class="main-content"  id="about">
+    <div class="main-content" id="about">
         <section class="section-about">
             <div class="about-content">
                 <p class="about-text">Who Am I ?</p>
                 <h2 class="about-title">About Me</h2>
                 <p class="about-description">
-                    I am Ishwar, a passionate <strong>Frontend Web Developer</strong> with a keen eye for detail and a love for creating engaging user experiences.
-                    I specialize in crafting visually appealing and responsive websites that not only look great but also function seamlessly across all devices. My goal is to bring ideas to life through innovative design and cutting-edge technology.
-                    I have experience in <strong>HTML, CSS, and JavaScript</strong>, and I am always eager to learn <strong>new technologies</strong>.
+                    I am Ishwar, a passionate <strong>Frontend Web Developer</strong> with a keen eye for detail
+                    and
+                    a
+                    love for creating engaging user experiences.
+                    I specialize in crafting visually appealing and responsive websites that not only look great
+                    but
+                    also function seamlessly across all devices. My goal is to bring ideas to life through
+                    innovative
+                    design and cutting-edge technology.
+                    I have experience in <strong>HTML, CSS, and JavaScript</strong>, and I am always eager to
+                    learn
+                    <strong>new technologies</strong>.
                 </p>
             </div>
         </section>
-        <section class = "section-skills" id="skills">
+        <section class="section-skills" id="skills">
             <div class="skill-content">
                 <h2 class="skills-title">What i have learn so far...</h2>
                 <div class="skills-container">
@@ -106,9 +134,9 @@
 
 
     <section id="resume" class="resume section">
-      <div class="section-title">
-        <h2>Qualifications</h2>
-      </div>
+        <div class="section-title">
+            <h2>Qualifications</h2>
+        </div>
 
         <div class="resume-data">
 
@@ -150,7 +178,7 @@
                     <p>National Institute of Information Technology(NIIT)</p>
                 </div>
 
-                
+
 
                 <div class="resume-item">
                     <h4>Bachelor of Computer Applications(BCA)</h4>
@@ -165,20 +193,24 @@
 
 
     <Section class="project-section" id="project">
-        <div class="project-heading">
-            <p class="project-subtitle">What I Did ?</p>
-            <h6 class="project-title">My Projects</h6>
+        <div class="project-container">
+            <div class="project-heading">
+                <p class="project-subtitle">What I Did ?</p>
+                <h6 class="project-title">My Projects</h6>
+            </div>
 
-            <div class="project-container">
+            <div class="project-grid">
                 <div class="project-list">
                     <a href="#" class="project-card">
                         <img src="images/projects image/Youtube Clone.png" alt="Youtube Clone" class="project-card-img">
                         <span class="project-card-overlay">
-                        <span class="project-card-caption">
-                            <h4>Itube</h4>
-                            <p>Itube is a clone website of youtube with frontend technologies for a seamless user experience</p>
+                            <span class="project-card-caption">
+                                <h4>Itube</h4>
+                                <p>Itube is a clone website of youtube with frontend technologies for a seamless
+                                    user
+                                    experience</p>
+                            </span>
                         </span>
-                        </span>               
                     </a>
                 </div>
 
@@ -186,61 +218,64 @@
                     <a href="#" class="project-card">
                         <img src="images/projects image/To do list.png" alt="To Do List" class="project-card-img">
                         <span class="project-card-overlay">
-                        <span class="project-card-caption">
-                            <h4>Just do it!</h4>
-                            <p>Just do it is a To-do list project that help to add and remove the tasks</p>
+                            <span class="project-card-caption">
+                                <h4>Just do it!</h4>
+                                <p>Just do it is a To-do list project that help to add and remove the tasks</p>
+                            </span>
                         </span>
-                        </span>
-                    </a>               
+                    </a>
                 </div>
             </div>
+        </div>
+
         </div>
     </Section>
 
     <section class="contact-section" id="contact">
         <div class="contact-content">
             <h2 class="contact-title">Contact Me</h2>
+
             <div class="contact-lists">
                 <div class="contact-item">
-                    <i class="bi bi-person-rolodex"></i>
-                    <span class="contact-lable">CONTACT ADDRESS</span>
-                    <span class="contact-info">Block B, House no 518</span>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="contact-label">CONTACT ADDRESS</span>
+                    <span class="contact-info">Block B, House no 518,</span>
                     <span class="contact-info">Delhi, India</span>
                 </div>
 
-                 <div class="contact-item">
-                    <i class="bi bi-whatsapp"></i>
-                    <span class="contact-lable">LET'S TALK</span>
-                    <a href="https://wa.me/917827113202" class="contact-info">+91 7827113202</a>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    <span class="contact-label">LET'S TALK</span>
+                    <a href="https://wa.me/917827113202" class="contact-info" target="_blank" rel="noopener no-referrer" aria-label="Contact me on WhatsApp">+91 7827113202</a>
                 </div>
 
                 <div class="contact-item">
-                    <i class="bi bi-envelope"></i>
-                    <span class="contact-lable">MAIL</span>
-                    <a href="mailto:ishwar3831@gmail.com" class="contact-info">ishwar3831@gmail.com</a>
-                </div>
-
-                 <div class="contact-item">
-                    <i class="bi bi-linkedin"></i>
-                    <span class="contact-lable">LET'S CONNECT</span>
-                    <a href="https://www.linkedin.com/in/ishwar-181a822b5" class="contact-info">LinkedIn Profile</a>
-                </div>
-
-                  <div class="contact-item">
-                    <i class="bi bi-linkedin"></i>
-                    <span class="contact-lable">GITHUB</span>
-                    <a href="https://github.com/dashboard" class="contact-info">GitHub Profile</a>
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    <span class="contact-label">MAIL</span>
+                    <a href="mailto:ishwar3831@gmail.com" class="contact-info" aria-label="Send me an email">ishwar3831@gmail.com</a>
                 </div>
 
                 <div class="contact-item">
-                    <i class="bi bi-filetype-pdf"></i>
-                    <span class="contact-lable">RESUME</span>
-                    <a href="file/Ishwar Resume (1).pdf" class="contact-info" target="_blank">Download Resume</a>
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <span class="contact-label">LET'S CONNECT</span>
+                    <a href="https://www.linkedin.com/in/ishwar-181a822b5" class="contact-info" target="_blank" rel="noopener no-referrer" aria-label="Visit my LinkedIn profile">LinkedIn Profile</a>
                 </div>
 
+                <div class="contact-item">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span class="contact-label">GITHUB</span>
+                    <a href="https://github.com/dashboard" class="contact-info" target="_blank" rel="noopener no-referrer" aria-label="Visit my GitHub profile">GitHub Profile</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                    <span class="contact-label">RESUME</span>
+                    <a href="file/Ishwar Resume (1).pdf" class="contact-info" target="_blank" rel="noopener no-referrer" aria-label="Download my resume">Download Resume</a>
+                </div>
             </div>
         </div>
     </section>
     <script src="script.js"></script>
 </body>
+
 </html>

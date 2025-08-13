@@ -114,7 +114,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .resume.section {
         padding: 30px 5px;
     }
@@ -527,7 +527,7 @@ strong {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .resume.section {
         padding: 30px 5px;
     }
@@ -673,7 +673,7 @@ strong {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .project-section {
         padding: 20px 10px;
     }

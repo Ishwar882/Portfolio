@@ -114,7 +114,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .resume.section {
         padding: 30px 5px;
     }
@@ -150,7 +150,7 @@ h6 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hamburger {
         display: block;
         position: absolute;
@@ -219,6 +219,7 @@ h6 {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: bold;
     opacity: 1;
+    cursor:default;
 }
 
 .header .header-content .header-title .up {
@@ -242,6 +243,7 @@ h6 {
     font-size: 1.5rem;
     font-weight: 500;
     opacity: .7;
+    cursor:default;
 }
 
 .header .header-content p:hover {
@@ -259,9 +261,10 @@ h6 {
     padding: 100px 20px;
     flex-wrap: nowrap !important;
     overflow-x: auto;
+    cursor:default;
 }
 
-@media (max-width: 992px) {
+@media screen and(max-width: 992px) {
     .main-content {
         flex-direction: row !important;
         padding: 120px 20px;
@@ -276,7 +279,7 @@ h6 {
 }
 
 /*mobile adjustments */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main-content {
         padding: 100px 10px;
     }
@@ -284,6 +287,8 @@ h6 {
     .section-about,
     .section-skills {
         padding: 20px;
+        flex: 0 0 48%;
+        min-width: 300px;
     }
 
     .about-text,
@@ -297,7 +302,7 @@ h6 {
 }
 
 /*very small screens */
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .main-content {
         padding-top: 80px;
     }
@@ -395,7 +400,7 @@ strong {
     transform: scale(2);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .skills-container .skill-item img:hover {
         transform: scale(1.5);
         /* Smaller for mobile */
@@ -410,12 +415,14 @@ strong {
     width: 100%;
     min-height: 100vh;
     height: auto;
+    cursor:default;
 }
 
 .section-title {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 40px;
     width: 100%;
 }
 
@@ -481,7 +488,7 @@ strong {
 
 /* Responsive adjustments for resume section */
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .resume.section {
         padding: 60px 15px;
     }
@@ -492,7 +499,7 @@ strong {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .resume.section {
         padding: 40px 10px;
     }
@@ -520,14 +527,14 @@ strong {
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .resume.section {
         padding: 30px 5px;
     }
 
     .section-title h2 {
         font-size: 1.8rem;
-        padding: 15px;
+        padding-top: 40px;
     }
 
     .resume .resume-item {
@@ -557,6 +564,7 @@ strong {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    cursor:default;
 }
 
 .project-heading p {
@@ -639,7 +647,7 @@ strong {
 
 /* Responsive adjustments for portfolio*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .project-section {
         padding: 30px 15px;
     }
@@ -665,7 +673,7 @@ strong {
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .project-section {
         padding: 20px 10px;
     }
@@ -699,15 +707,14 @@ strong {
 }
 
 .contact-content .contact-title {
-    display: flex;
     align-items: center;
     justify-content: center;
     color: var(--default-color);
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 600;
     padding: 20px 0;
-    margin-bottom: 40px;
     text-align: center;
+    cursor:default;
 }
 
 .contact-lists {
@@ -743,6 +750,7 @@ strong {
     font-weight: bold;
     color: var(--default-color);
     margin-bottom: 5px;
+    cursor:default;
 }
 
 .contact-info {
@@ -787,14 +795,14 @@ strong {
 
 /* Responsive adjustments for contact section*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact-section {
         padding: 30px 15px;
     }
 
     .contact-content .contact-title {
         font-size: 2rem;
-        margin-bottom: 30px;
+        padding-top: 80px;
     }
 
     .contact-lists {
@@ -816,14 +824,12 @@ strong {
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .contact-section {
-        padding: 20px 10px;
+        padding: 15px 0px;
     }
-
     .contact-content .contact-title {
-        font-size: 1.8rem;
-        margin-bottom: 25px;
+        padding-top: 80px;
     }
 
     .contact-lists {

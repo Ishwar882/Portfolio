@@ -114,7 +114,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .resume.section {
         padding: 30px 5px;
     }
@@ -297,7 +297,7 @@ h6 {
 }
 
 /*very small screens */
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .main-content {
         padding-top: 80px;
     }
@@ -311,7 +311,7 @@ h6 {
     background: var(--white-color);
     border-radius: 16px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
-    padding: 32px;
+    padding: 16px;
     width: 100%;
     min-height: 60%;
     max-height: 80vh;
@@ -520,7 +520,7 @@ strong {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .resume.section {
         padding: 30px 5px;
     }
@@ -665,7 +665,7 @@ strong {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .project-section {
         padding: 20px 10px;
     }
@@ -816,7 +816,7 @@ strong {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .contact-section {
         padding: 20px 10px;
     }
